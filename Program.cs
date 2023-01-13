@@ -13,6 +13,10 @@ int degree (int num1, int num2)
         result = result * num1;
         count++;
     }
+    if(num2 == 0)
+            {
+                result = 1;
+            }
     return result;
 }
 // _________________________________
