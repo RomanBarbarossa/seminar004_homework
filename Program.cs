@@ -56,36 +56,37 @@
 //  Решение 2: через строку.
 
 // Method string
-// int AllSum (string number)
-// {
-//     int sum = 0;
-//     int i = 0;
-//     while(i < number.Length)
-//     {
-//         sum = sum + Convert.ToInt32(number[i]);
-//     }
-//     return sum;
-// }
+int AllSum (string number)
+{
+    int sum = 0;
+    int i = 0;
+    while(i < number.Length)
+    {
+        sum = sum + Convert.ToInt32(number[i]);
+        i++;
+    }
+    return sum;
+}
 
-// Console.Write("Введите число: ");
-// string Number = Console.ReadLine()!;
-// Console.WriteLine($"Сумма цифр в числе {Number} равна {AllSum(Number)}");
+Console.Write("Введите число: ");
+string Number = Console.ReadLine()!;
+Console.WriteLine($"Сумма цифр в числе {Number} равна {AllSum(Number)}");
 
-//   В ЧЁМ МОЖЕТ БЫТЬ ПРОБЛЕМА?? ЗАВИСАЕТ ТЕРМИНАЛ ПРИ ЗАПУСКЕ  этого варианта решения, НО ОШИБОК НЕ ВЫДАЕТ??????????????????????????????????????
+//   В ЧЁМ МОЖЕТ БЫТЬ ПРОБЛЕМА??  Выдает не правильный результат. НО ОШИБОК НЕ ВЫДАЕТ????????????????
 
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. (числа берете любые)
 
-// method 
+// // method 
 
-int[] NewArray (int size)
-{
-    int[] array = new int[size];
-    for(int i = 0;i<size;i++)
-    {
-        array[i] = new Random().Next(-133,112);
-    }
-    return array;
-}
-int[] newMassive = NewArray(8);
-Console.WriteLine($"[{String.Join("|",newMassive)}]");
+// int[] NewArray (int size)
+// {
+//     int[] array = new int[size];
+//     for(int i = 0;i<size;i++)
+//     {
+//         array[i] = new Random().Next(-133,112);
+//     }
+//     return array;
+// }
+// int[] newMassive = NewArray(8);
+// Console.WriteLine($"[{String.Join("|",newMassive)}]");
