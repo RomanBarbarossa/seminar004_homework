@@ -26,3 +26,16 @@ int digit = int.Parse(Console.ReadLine()!);
 Console.Write("Enter the number of degree  ");
 int deg = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"Число {digit} в степени {deg} = {degree(digit, deg)}");
+
+// Напишите программу которая принимает на вход число и выдаёт сумму цифр в числе
+
+Console.Write("Введите число ");
+
+
+
+
+
+int[] summ (int size)
+{
+    size.Lenght
+}
