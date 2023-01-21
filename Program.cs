@@ -32,7 +32,7 @@
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // 452 -> 11
 // 82 -> 10
-// 9012 -> 12
+// // 9012 -> 12
 
 // Решение 1 - математическое
 // Method---------
@@ -62,7 +62,7 @@ int AllSum (string number)
     int i = 0;
     while(i < number.Length)
     {
-        sum = sum + Convert.ToInt32(number[i]);
+        sum = sum + Convert.ToInt32(Convert.ToString(number[i]));
         i++;
     }
     return sum;
@@ -77,10 +77,4 @@ Console.WriteLine($"Сумма цифр в числе {Number} равна {AllSu
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. (числа берете любые)
 
-// // method 
-
-System.Console.Write("Enter the number  ");
-int digit = int.Parse(Console.ReadLine()!);
-Console.Write("Enter the number of degree  ");
-int deg = int.Parse(Console.ReadLine()!);
-Console.WriteLine($"Число {digit} в степени {deg} = {degree(digit, deg)}");
+// // method
